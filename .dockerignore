@@ -1,0 +1,8 @@
+## Ignore everything by default
+**
+## But main.go should be in
+!cmd
+## Makefile should stay
+!Makefile
+## Allow go.mod
+!go.mod
