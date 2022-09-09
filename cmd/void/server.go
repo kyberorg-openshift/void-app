@@ -36,6 +36,15 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 		"color:#eee; font-family:'Helvetica Neue',sans-serif; font-size: 30px; font-weight: 300; "+
 		"line-height: 32px; margin: 0 0 72px; text-align: center;  "+
 		"\">There is nothing here... really nothing, just void</h2>")
+
+	_, _ = fmt.Fprintf(w, "<h3 style=\""+
+		"color:#eee; font-family:'Arial',sans-serif; font-size: 25px; font-weight: 200; "+
+		"line-height: 223px; margin: 0 0 72px; text-align: center;  "+
+		"\">"+
+		"This is line for testing things. Change it and commit to see changes."+
+		"Change this text anyway you want"+
+		"</h3>")
+
 	_, _ = fmt.Fprintf(w, "</body>")
 }
 
