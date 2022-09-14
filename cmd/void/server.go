@@ -42,7 +42,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 		"line-height: 223px; margin: 0 0 72px; text-align: center;  "+
 		"\">"+
 		"This is line for testing things. Change it and commit to see changes. "+
-		"Change this text anyway you want"+
+		"Change this text anyway you want..."+
 		"</h3>")
 
 	_, _ = fmt.Fprintf(w, "</body>")
