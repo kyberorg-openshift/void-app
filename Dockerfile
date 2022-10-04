@@ -7,7 +7,7 @@ RUN make small-binary
 RUN chmod ug+x bin/void-app
 
 #FROM kio.ee/base/abi:edge as runner
-FROM ubuntu as runner
+FROM centos as runner
 #COPY --from=builder --chown=appuser:appgroup /go/src/app/bin/void-app /void-app
 #USER appuser
 COPY --from=builder /go/src/app/bin/void-app /void-app
