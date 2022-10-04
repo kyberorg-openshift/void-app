@@ -6,7 +6,8 @@ COPY go.mod go.mod
 RUN make small-binary
 RUN chmod ug+x bin/void-app
 
-FROM kio.ee/base/abi:edge as runner
+#FROM kio.ee/base/abi:edge as runner
+FROM ubuntu as runner
 COPY --from=builder --chown=appuser:appgroup /go/src/app/bin/void-app /void-app
 USER appuser
 ENTRYPOINT ["/void-app"]
