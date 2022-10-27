@@ -41,7 +41,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 		"color:#eee; font-family:'Arial',sans-serif; font-size: 25px; font-weight: 200; "+
 		"line-height: 223px; margin: 0 0 72px; text-align: center;  "+
 		"\">"+
-		"This is line for testing things. Change it and commit to see changes. "+
+		"This is line for testing stuff. Change it and commit to see changes. "+
 		"Change this text anyway you want..."+
 		"</h3>")
 
